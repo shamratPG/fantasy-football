@@ -1,27 +1,28 @@
-const removeBtn = document.getElementById('remove');
 const playerList = document.getElementById('player-list');
-const childNumber = document.getElementById('player-list').childNodes;
 
 document.body.addEventListener('click', event => {
+    //If any 'SELECT BUTTON' is clicked 
     if (event.target.innerText === 'Select') {
-        if (childNumber.length <= 5) {
+        //Only add new player name if total number of players is less then or equal to 5
+        if (playerList.childNodes.length <= 5) {
+            //Take the 'h3' tag under the parent of which 'SELECT BUTTON' is clicked
             const playerNameTag = event.target.parentNode.getElementsByTagName('h3');
             const playerName = playerNameTag[0].innerText;
-            const playerNode = document.createTextNode(playerName);
 
-            const AddList = document.createElement("li");
-            AddList.appendChild(playerNode);
-            playerList.appendChild(AddList);
+            const playerNameNode = document.createTextNode(playerName);
+            const makeNewListItem = document.createElement("li");
 
-            console.log()
+            makeNewListItem.appendChild(playerNameNode);
+            playerList.appendChild(makeNewListItem);
 
+            //Disable the button once clicked and modified some styles of the button
             event.target.setAttribute('disabled', true);
             event.target.classList.remove('shadow', 'hover:shadow-md', 'hover:shadow-teal-600')
             event.target.classList.add("bg-black", 'text-gray-400');
-            removeBtn.classList.remove('hidden');
 
         }
-        else alert('You Can no select more than 5 players')
+        //Gives a alert message if player list already has 5 player 
+        else alert('You can not select more than 5 players')
     }
     else if (event.target.innerText === 'Calculate') {
         console.log('Calcule is clicked');
@@ -32,9 +33,3 @@ document.body.addEventListener('click', event => {
 
 })
 
-removeBtn.addEventListener('click', () => {
-    playerList.removeChild(playerList.lastElementChild);
-    if (childNumber.length <= 1) {
-        removeBtn.classList.add('hidden');
-    }
-})
