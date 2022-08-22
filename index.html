@@ -9,200 +9,241 @@
     <title>Fantasy Football</title>
 </head>
 
-<body>
-    <header class="">
-        <h1 class="">Fantasy Football</h1>
-        <p class="">Pick your best 5 from below. Play and win Rewards.Join our fantastic community of football lovers.
+<body class="bg-teal-100 text-teal-100">
+    <header class="h-96 bg-slate-900 text-teal-100 flex flex-col justify-center items-center">
+        <h1 class="text-7xl font-semibold">Fantasy Football</h1>
+        <p class="mt-8">Pick your best 5 from below. Play and win Rewards.Join our fantastic community of football
+            lovers.
         </p>
     </header>
-    <main class="">
-        <section class="">
-            <div class="player-card">
-                <div>
-                    <img src="images/lionel-messi.jpg" alt="">
-                </div>
-                <div>
-                    <h3>Lionel Messi</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-                <!-- </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Player1</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Player1</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Mohamed Salah</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Kylian Mbappe</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Erling Haaland</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Harry Kane</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Karim Benzema</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Trent Alexander-Arnold</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Cristiano Ronaldo</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Neymar</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div>
-            <div class="player-card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Joshua Kimmich</h3>
-                    <ul>
-                        <li>Goals</li>
-                        <li>Assist</li>
-                    </ul>
-                </div>
-                <button class="select">Select</button>
-            </div> -->
-        </section>
-        <aside>
-            <div>
-                <h3>Your Fantastic Five</h3>
-                <ol>
+    <main class="mt-12 w-5/6 mx-auto grid grid-cols-12 gap-8">
+        <section class="col-span-9 grid grid-cols-3 gap-4">
 
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/lionelMessi.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Lionel Messi</h3>
+                    <p><span class="font-semibold text-white">Country:</span> Argentina</p>
+                    <p><span class="font-semibold text-white">Club:</span> PSG</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/cristianoRonaldo.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Cristiano Ronaldo</h3>
+                    <p><span class="font-semibold text-white">Country: </span>Portugal</p>
+                    <p><span class="font-semibold text-white">Club: </span>Manchester United</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/erlingHaaland.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">
+                        Erling Haaland</h3>
+                    <p><span class="font-semibold text-white">Country: </span>Norway</p>
+                    <p><span class="font-semibold text-white">Club: </span>Manchester City</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/harryKane.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Harry Kane</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>England</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Totenhum Hotsper</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/joshuaKimmich.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Joshua Kimmich</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>Germany</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span> Bayern Munich</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/karimBenzema.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Karim Benzema</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>France</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Real Madrid</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/kevinDeBruyne.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Kevin De Bruyne</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>Belgium</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Manchester City</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/kylianMbappe.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Kylian Mbappe</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>France</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>PSG</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/mohamedSalah.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Mohamed Salah</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>Egypt</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Liverpool</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/neymarJr.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2">Neymar Jr</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>Brazil</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>PSG</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/robertLewandowski.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="my-2 text-2xl font-semibold text-white"> Lewandowski</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>Poland</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Barcalona</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+            <div class="player-card bg-slate-900 text-center rounded">
+                <div>
+                    <img class="rounded-t" src="images/trentAlexanderArnold.jpg" alt="">
+                </div>
+                <div class="px-2">
+                    <h3 class="text-2xl font-semibold text-white my-2"> Alexander Arnold</h3>
+                    <p><span class="font-semibold text-white">
+                            Country:
+                        </span>England</p>
+                    <p><span class="font-semibold text-white">
+                            Club:
+                        </span>Liverpool</p>
+                </div>
+                <button
+                    class="select w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Select</button>
+            </div>
+
+        </section>
+        <aside class="col-span-3">
+            <div class="bg-slate-900 mb-4 p-4 rounded">
+                <h3 class="p-2 w-fit m-auto text-2xl font-semibold text-white border-b-2 mb-4">Your Fantastic Five</h3>
+                <ol>
+                    <li class="pb-2">1. </li>
+                    <li class="pb-2">2. </li>
+                    <li class="pb-2">3. </li>
+                    <li class="pb-2">4. </li>
+                    <li class="pb-2">5. </li>
                 </ol>
             </div>
-            <div>
+            <div class="bg-slate-900 px-4 rounded font-semibold">
                 <div>
-                    <h3>Budget</h3>
+                    <h3 class="p-2 w-fit m-auto text-2xl font-semibold text-white border-b-2">Budget</h3>
+                    <div class="my-4 flex justify-between">
+                        <label for="per-player" class="w-3/6">Per Player:</label>
+                        <input id="per-player" type="text"
+                            class="w-2/6 text-stone-800 font-semibold outline-teal-400 rounded text-center">
+                    </div>
+                    <button id="calculate"
+                        class="mx-auto block w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold">Calculate</button>
 
-                    <label for="per-player">Per Player</label>
-                    <input id="per-player" type="text">
-                    <button id="calculate">Calculate</button>
-
-                    <div>
+                    <div class="my-4 flex justify-between">
                         <p>Player Expenses :</p>
                         <p>$<span>00</span></p>
                     </div>
+                    <div class="my-4 flex justify-between">
+                        <label for="manager">Manager :</label>
+                        <input id="manager" type="text"
+                            class="w-2/6 text-stone-800 font-semibold outline-teal-400 rounded text-center">
+                    </div>
+                    <div class="my-4 flex justify-between">
+                        <label for="coach">Coach :</label>
+                        <input id="coach" type="text"
+                            class="w-2/6 text-stone-800 font-semibold outline-teal-400 rounded text-center">
+                    </div>
 
-                    <label for="manager">Manager</label>
-                    <input id="manager" type="text">
+                    <button
+                        class="mx-auto block w-5/6 my-4 bg-stone-800 shadow hover:shadow-md hover:shadow-teal-600 shadow-teal-600 p-2 rounded font-semibold"
+                        id="calculate-total">Calculate Total</button>
 
-                    <label for="coach">Coach</label>
-                    <input id="coach" type="text">
-
-                    <button id="calculate-total">Calculate Total</button>
-
-                    <div>
+                    <div class="my-4 flex justify-between pb-4">
                         <p>Total :</p>
                         <p>$<span>00</span></p>
                     </div>
@@ -210,8 +251,8 @@
             </div>
         </aside>
     </main>
-    <footer>
-        <p>Md.Shamrat Hossain</p>
+    <footer class="mt-12 bg-stone-800 text-center h-20 flex justify-center items-center">
+        <p>Md. Shamrat Hossain</p>
     </footer>
 </body>
 
