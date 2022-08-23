@@ -1,6 +1,6 @@
-
 const playerList = document.getElementById('player-list');
-const inputError = 'Please put a number in input field'
+const inputError = 'Please put a number in input field';
+let playersCost;
 
 function inputValue(input) {
     //this function takes an input tag id and return the value inside it in number or Nan. And it clear the input field also.
@@ -44,8 +44,8 @@ document.body.addEventListener('click', event => {
     else if (event.target.innerText === 'Calculate') {
         const onePlayerCost = inputValue('per-player');
         if (!isNaN(onePlayerCost)) {
-            const playersCost = onePlayerCost * (playerNumber - 1);
-            setValue('player-expenses', playersCost)
+            playersCost = onePlayerCost * (playerNumber - 1);
+            setValue('player-expenses', playersCost);
         }
         else {
             alert(inputError);
@@ -54,21 +54,14 @@ document.body.addEventListener('click', event => {
     else if (event.target.innerText === 'Calculate Total') {
         const managerCost = inputValue('manager');
         const coachCost = inputValue('coach');
-        const playerCostString = document.getElementById('player-expenses').innerText;
-        const playerCost = parseFloat(playerCostString);
 
-        if (!isNaN(managerCost) && !isNaN(coachCost) && !isNaN(playerCost)) {
-            const totalCost = managerCost + coachCost + playerCost;
+        if (!isNaN(managerCost) && !isNaN(coachCost) && !isNaN(playersCost)) {
+            const totalCost = managerCost + coachCost + playersCost;
             setValue('total', totalCost);
         }
         else {
             alert(inputError);
         }
-
-
-
-
     }
-
 })
 
